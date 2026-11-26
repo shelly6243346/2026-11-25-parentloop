@@ -32,7 +32,7 @@ You do not need to install anything, and you do not need an account or an API ke
 
 Open this link in Chrome, Safari, or Edge:
 
-https://shelly6243346.github.io/2026-11-25-parentloop/
+https://shelly6243346.github.io/parentloop/
 
 **On your computer**
 
