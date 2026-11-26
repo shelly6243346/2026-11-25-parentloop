@@ -1,6 +1,6 @@
 (function () {
   // Google Apps Script web app that appends rows to the "ParentLoop Waitlist" Google Sheet.
-  var WAITLIST_URL = "__WAITLIST_URL__";
+  var WAITLIST_URL = "https://script.google.com/macros/s/AKfycbyeYpfgKGPR_0I7jt_66BTyDoyMGrRjYi6ay4tGuG9XeVjLF8e_JrrNAkDk1zaYGj5p/exec";
   var form = document.getElementById("waitlist-form");
   if (!form) return;
 
