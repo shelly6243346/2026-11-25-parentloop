@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ParentLoop — The care board for siblings</title>
+  <meta name="description" content="ParentLoop helps adult children share medications, visits, and tasks for an aging parent. This browser demo uses the sample Wang family and stores changes only on your device.">
+  <meta name="theme-color" content="#0c2f2a">
+  <meta property="og:title" content="ParentLoop — The care board for siblings">
+  <meta property="og:description" content="One shared board for a parent's medications, visits, and to-dos. Sample family included. Nothing is uploaded.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="announce"><p>Demo prototype. The Wang family is sample data. Nothing you type is uploaded.</p></div>
+  <header class="site-header">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(1120px, calc(100% - 40px));">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0e6b5c"/><path d="M11.5 25.5c1.2-7.2 5.6-12 10.8-12 5.6 0 8.7 3.6 8.7 8.2 0 4.8-3.4 8.1-7.8 9" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/><circle cx="12.2" cy="25.2" r="2.1" fill="#f3d7a4"/><circle cx="22.2" cy="13.2" r="2.1" fill="#fff"/><circle cx="30.2" cy="21.2" r="2.1" fill="#f3b8a8"/></svg>
+        <span>ParentLoop</span>
+      </a>
+      <details class="nav-details">
+        <summary class="nav-summary">Menu</summary>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#product">Product</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-secondary" href="app.html">Open demo</a>
+          <a class="btn btn-primary" href="#waitlist">Join waitlist</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Family care coordination</p>
+        <h1>The care board siblings actually keep up to date.</h1>
+        <p class="lede">ParentLoop gives adult children one shared place for a parent's medications, visits, and to-dos, plus a weekly note you can paste into the family chat.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="app.html">Open the demo</a>
+          <a class="btn btn-secondary" href="#waitlist">Join the waitlist</a>
+        </div>
+        <ul class="proof">
+          <li>Opens in the browser</li>
+          <li>Sample data is labeled</li>
+          <li>No account and no API key</li>
+        </ul>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="stage-top">
+          <span class="stage-dots"></span><span class="stage-dots"></span><span class="stage-dots"></span>
+          <span>ParentLoop · sample family</span>
+        </div>
+        <div class="stage-body">
+          <div class="stage-side">
+            <span class="on">Today</span>
+            <span>Meds</span>
+            <span>Calendar</span>
+            <span>Tasks</span>
+          </div>
+          <div class="stage-main">
+            <div class="mini-card">
+              <span class="tag">Sample data</span>
+              <strong>Grandma Wang, 78</strong>
+              <p>Penicillin · Shellfish. Metformin refill in 6 days.</p>
+            </div>
+            <div class="mini-card">
+              <strong>Today's doses</strong>
+              <p>2 taken · 1 missed · 2 still due</p>
+            </div>
+            <div class="mini-week">
+              <div class="mini-day bad">Mon</div>
+              <div class="mini-day">Tue</div>
+              <div class="mini-day gap">Wed</div>
+              <div class="mini-day">Thu</div>
+              <div class="mini-day">Fri</div>
+              <div class="mini-day bad">Sat</div>
+              <div class="mini-day gap">Sun</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="problem">
+      <div class="section-head">
+        <p class="eyebrow">The problem</p>
+        <h2>Care slips in the gap between siblings.</h2>
+        <p>The doctor's visit is the easy part. The hard part is the week after, when rides, refills, and uncovered afternoons live in a scrolling chat.</p>
+      </div>
+      <div class="problem-grid">
+        <article class="problem">
+          <h3>The thread is the chart.</h3>
+          <p>Dose changes, insurance numbers, and “who has Thursday” disappear under the next message.</p>
+        </article>
+        <article class="problem">
+          <h3>One sibling holds the map.</h3>
+          <p>The adult child who lives closest becomes the unpaid coordinator, and the others cannot see the load.</p>
+        </article>
+        <article class="problem">
+          <h3>Gaps show up late.</h3>
+          <p>A missed refill or a day with nobody scheduled becomes an emergency instead of a Tuesday task.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="product">
+      <div class="section-head">
+        <p class="eyebrow">Product</p>
+        <h2>Everything in this demo.</h2>
+        <p>The sample family is Grandma Wang, 78, and her adult children Amy, Ben, and Chloe. Every screen is labeled sample data.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Parent profile</h3>
+          <p>Conditions, allergies, doctors, insurance, and emergency contacts, plus a one-tap emergency card.</p>
+          <p><a href="app.html#profile">Open the profile</a></p>
+        </article>
+        <article class="feature">
+          <h3>Medications</h3>
+          <p>Dose and time, today's taken or missed checklist, and refill reminders you can mark as requested.</p>
+          <p><a href="app.html#meds">Open medications</a></p>
+        </article>
+        <article class="feature">
+          <h3>Shared calendar</h3>
+          <p>Appointments and sibling visits, each with an owner. Conflicts and uncovered days are highlighted.</p>
+          <p><a href="app.html#calendar">Open the calendar</a></p>
+        </article>
+        <article class="feature">
+          <h3>Task board</h3>
+          <p>Split the chores, filter My tasks, and see who is carrying the most finished work.</p>
+          <p><a href="app.html#tasks">Open tasks</a></p>
+        </article>
+        <article class="feature">
+          <h3>Note extractor</h3>
+          <p>Paste a doctor's instructions. This demo uses written rules, not a live model, and says so on the screen.</p>
+          <p><a href="app.html#notes">Try the sample note</a></p>
+        </article>
+        <article class="feature">
+          <h3>Weekly digest</h3>
+          <p>A family update built from the board, with a copy button for the group chat.</p>
+          <p><a href="app.html#digest">Read the digest</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="how">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps, then the chat stays short.</h2>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <b>1</b>
+          <h3>Keep one profile.</h3>
+          <p>Allergies, doctors, insurance, and a card you can show in an emergency live in one place.</p>
+        </article>
+        <article class="step">
+          <b>2</b>
+          <h3>Split the week.</h3>
+          <p>Visits show who owns them, where two siblings clash, and which days nobody has.</p>
+        </article>
+        <article class="step">
+          <b>3</b>
+          <h3>Send one digest.</h3>
+          <p>Meds, gaps, and open tasks copy into the family chat in one tap.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="story">
+      <div class="section-head">
+        <p class="eyebrow">Sample family</p>
+        <h2>A week in the Wang care circle.</h2>
+        <p>Amy is nearby, Ben is about 40 minutes away, and Chloe joins from Seattle. The demo week is already filled in.</p>
+      </div>
+      <div class="story-grid">
+        <article class="story">
+          <h3>Monday conflict</h3>
+          <p>Amy is visiting at home while Ben is booked to take Grandma Wang to cardiology at the same time.</p>
+        </article>
+        <article class="story">
+          <h3>Open days</h3>
+          <p>Wednesday and Sunday have nobody scheduled. Either sibling can claim the day from the calendar.</p>
+        </article>
+        <article class="story">
+          <h3>Uneven load</h3>
+          <p>Amy has finished the most tasks in the sample history. The balance meter makes that visible.</p>
+        </article>
+      </div>
+      <p style="margin-top:18px"><a class="btn btn-primary" href="app.html">Open this week in the demo</a></p>
+    </section>
+
+    <section class="section wrap" id="pricing">
+      <div class="section-head">
+        <p class="eyebrow">Pricing</p>
+        <h2>Hypothetical plans for a future product.</h2>
+        <p>These prices are illustrations for the prototype. ParentLoop does not collect payment here.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <p class="hypo">Hypothetical</p>
+          <h3>Free</h3>
+          <p class="price">$0 <span>USD</span></p>
+          <p class="who">A single parent profile for a family that is just getting organized.</p>
+          <ul class="ticks">
+            <li>1 parent profile</li>
+            <li>Medication checklist</li>
+            <li>Emergency card on this device</li>
+            <li>Up to 3 family members</li>
+          </ul>
+          <a class="btn btn-secondary" href="app.html">Open the demo</a>
+        </article>
+        <article class="price-card featured">
+          <p class="hypo">Hypothetical · start here</p>
+          <h3>Family</h3>
+          <p class="price">$12 <span>USD / month</span></p>
+          <p class="who">The shared board for siblings who are already splitting the week.</p>
+          <ul class="ticks">
+            <li>Everything in Free</li>
+            <li>Shared calendar with conflict and gap flags</li>
+            <li>Task board and balance meter</li>
+            <li>Weekly digest you can copy</li>
+            <li>Refill reminders</li>
+          </ul>
+          <a class="btn btn-secondary" href="app.html">Open the demo</a>
+        </article>
+        <article class="price-card">
+          <p class="hypo">Hypothetical</p>
+          <h3>Family Plus</h3>
+          <p class="price">$29 <span>USD / month</span></p>
+          <p class="who">A wider circle, a second parent, and a live note extractor when that ships.</p>
+          <ul class="ticks">
+            <li>Everything in Family</li>
+            <li>Note-to-task extractor when a live service exists</li>
+            <li>A second parent profile</li>
+            <li>Up to 8 people in the circle</li>
+          </ul>
+          <a class="btn btn-secondary" href="#waitlist">Join the waitlist</a>
+        </article>
+      </div>
+      <p class="pricing-note">Every button opens the same sample board or the waitlist. Tiers show how a future product could be packaged. They are not for sale in this demo. The note extractor you can try today is the rules-based demo, available in every view.</p>
+    </section>
+
+    <section class="section wrap" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Straight answers.</h2>
+      </div>
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Is this a medical record?</summary>
+          <p>No. Grandma Wang's profile is fiction, labeled sample data. Do not put a real person's care in this demo. In an emergency, call your local emergency number.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does the note tool send a doctor's note to an AI?</summary>
+          <p>No. The extractor uses rules written for this demo. It runs in your browser, it does not call a model, and it does not need an API key. The screen says so.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are the prices real?</summary>
+          <p>No. Free, Family at $12 a month, and Family Plus at $29 a month are hypothetical labels so the page looks like a product. Nothing can be purchased.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Who is the demo family?</summary>
+          <p>Grandma Wang, 78, and siblings Amy, Ben, and Chloe. Switch the demo identity inside the board. My tasks follows the sibling you pick.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can more than one sibling use it?</summary>
+          <p>In this prototype, everyone shares the same browser storage on that device. A shipped product would sync a family. The demo lets you act as Amy, Ben, or Chloe so the handoff is visible.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens to a waitlist email?</summary>
+          <p>It is saved in this browser only. ParentLoop does not send it anywhere. You can remove it under the form.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section wrap" id="waitlist">
+      <div class="waitlist">
+        <div>
+          <p class="eyebrow">Waitlist</p>
+          <h2>Ask for a note when a real pilot opens.</h2>
+          <p>Leave a name and email. They stay on this computer. Use a personal address you are comfortable storing locally, or a made-up one. This form is here so the product can be tried end to end.</p>
+        </div>
+        <form id="waitlist-form" novalidate>
+          <div class="form-grid">
+            <label class="field">Name
+              <input name="name" autocomplete="name" required maxlength="80" placeholder="Your name">
+            </label>
+            <label class="field">Email
+              <input name="email" type="email" autocomplete="email" required maxlength="120" placeholder="you@example.com">
+            </label>
+            <label class="field">I am
+              <select name="role">
+                <option>Adult child</option>
+                <option>Spouse or partner</option>
+                <option>Other family</option>
+                <option>Clinician or agency</option>
+                <option>Just looking</option>
+              </select>
+            </label>
+            <p id="waitlist-error" class="form-error" role="alert"></p>
+            <button class="btn btn-primary" type="submit">Save on this browser</button>
+            <p id="waitlist-success" class="form-success" role="status"></p>
+            <div id="waitlist-saved"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Open the sample family.</h2>
+          <p>Grandma Wang's week is loaded. Reset sample data anytime to put it back.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-secondary" href="app.html">Open the demo</a>
+          <a class="btn btn-secondary" href="app.html#emergency">Preview the emergency card</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo-mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0e6b5c"/><path d="M11.5 25.5c1.2-7.2 5.6-12 10.8-12 5.6 0 8.7 3.6 8.7 8.2 0 4.8-3.4 8.1-7.8 9" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round"/><circle cx="12.2" cy="25.2" r="2.1" fill="#f3d7a4"/><circle cx="22.2" cy="13.2" r="2.1" fill="#fff"/><circle cx="30.2" cy="21.2" r="2.1" fill="#f3b8a8"/></svg>
+          <span>ParentLoop</span>
+        </a>
+        <p>A calmer way for siblings to share the care of an aging parent.</p>
+      </div>
+      <div>
+        <h3>Product</h3>
+        <a href="#product">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h3>Demo</h3>
+        <a href="app.html">Care board</a>
+        <a href="app.html#emergency">Emergency card</a>
+        <a href="#waitlist">Waitlist</a>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <div class="wrap legal-line">© 2026 ParentLoop demo. Not a medical service. Privacy and Terms are placeholders.</div>
+  </footer>
+  <script src="assets/landing.js"></script>
+</body>
+</html>
