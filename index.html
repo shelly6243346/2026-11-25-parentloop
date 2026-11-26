@@ -14,7 +14,7 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <div class="announce"><p>Demo prototype. The Wang family is sample data. Nothing you type is uploaded.</p></div>
+  <div class="announce"><p>Demo prototype. The Wang family is sample data. The care board stays in your browser; only the waitlist form is sent to us.</p></div>
   <header class="site-header">
     <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;width:min(1120px, calc(100% - 40px));">
       <a class="logo" href="index.html">
@@ -275,7 +275,7 @@
         </details>
         <details class="faq-item">
           <summary>What happens to a waitlist email?</summary>
-          <p>It is saved in this browser only. ParentLoop does not send it anywhere. You can remove it under the form.</p>
+          <p>It goes to the ParentLoop team's private waitlist. We only use it to tell you when a pilot opens, and we never sell it.</p>
         </details>
       </div>
     </section>
@@ -285,7 +285,7 @@
         <div>
           <p class="eyebrow">Waitlist</p>
           <h2>Ask for a note when a real pilot opens.</h2>
-          <p>Leave a name and email. They stay on this computer. Use a personal address you are comfortable storing locally, or a made-up one. This form is here so the product can be tried end to end.</p>
+          <p>Leave your name and email and we'll write when a family pilot opens. No spam, and you can ask to be removed any time.</p>
         </div>
         <form id="waitlist-form" novalidate>
           <div class="form-grid">
@@ -305,9 +305,9 @@
               </select>
             </label>
             <p id="waitlist-error" class="form-error" role="alert"></p>
-            <button class="btn btn-primary" type="submit">Save on this browser</button>
+            <label class="hp-field" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+            <button class="btn btn-primary" type="submit">Join the waitlist</button>
             <p id="waitlist-success" class="form-success" role="status"></p>
-            <div id="waitlist-saved"></div>
           </div>
         </form>
       </div>

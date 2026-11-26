@@ -778,3 +778,5 @@ body.modal-open { overflow: hidden; }
   .emergency { position: absolute; inset: 0 auto auto 0; width: 100%; box-shadow: none; }
   .no-print { display: none !important; }
 }
+
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

@@ -43,7 +43,7 @@ https://shelly6243346.github.io/parentloop/
 
 The sample family is already filled in: Grandma Wang, and siblings Amy, Ben, and Chloe. Anything you change is saved only in that browser. Inside the demo, **Reset sample data** puts the original example back.
 
-The waitlist on the home page is also saved only in that browser. Nothing you type is sent to a server.
+The waitlist form on the home page sends name, email, and role to a private Google Sheet through a Google Apps Script web app. Nothing else is sent to a server.
 
 Prices on the website (Free, Family, Family Plus) are hypothetical labels for the prototype. They are not a real charge.
 
